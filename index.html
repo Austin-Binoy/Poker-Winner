@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texas Hold'em Hand Evaluator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Texas Hold'em Hand Evaluator</h1>
+    <div class="container">
+        <h2>Community Cards</h2>
+        <div class="community-cards">
+            <input type="text" id="community1" maxlength="2" placeholder="Card 1 (e.g. AS)">
+            <input type="text" id="community2" maxlength="2" placeholder="Card 2 (e.g. KH)">
+            <input type="text" id="community3" maxlength="2" placeholder="Card 3 (e.g. 7D)">
+            <input type="text" id="community4" maxlength="2" placeholder="Card 4 (e.g. 5C)">
+            <input type="text" id="community5" maxlength="2" placeholder="Card 5 (e.g. 2H)">
+        </div>
+        
+        <h2>Player Hands</h2>
+        <div id="player-hands">
+            <div class="player-hand">
+                <input type="text" class="player-card" maxlength="2" placeholder="Card 1 (e.g. QH)">
+                <input type="text" class="player-card" maxlength="2" placeholder="Card 2 (e.g. 8S)">
+            </div>
+        </div>
+        <button id="add-player">Add Player</button>
+        <button id="evaluate-hands">Evaluate Hands</button>
+        
+        <h2>Results</h2>
+        <div id="results"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
